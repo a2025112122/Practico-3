@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int sum=0, signo, N; 
+    printf("Introduce un numero N: ");
+    scanf("%d", &N);
+
+    if (N < 1) {
+        printf("El número debe ser mayor o igual a 1.\n");
+        return 0; 
+    }
+
+    for (int i = 1; i <= N; i++) {
+            signo=pow(-1,i+1);
+            sum += signo*i;
+        }
+
+
+    printf("La suma de signos intercalados (pares neg) del 1 al %d es: %d\n", N, sum);
+
+    return 0;
+}
