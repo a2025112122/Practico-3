@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int N;        
+    int sum=0; 
+    printf("Introduce un numero N: ");
+    scanf("%d", &N);
+
+    if (N < 1) {
+        printf("El número debe ser mayor o igual a 1.\n");
+        return 0; 
+    }
+
+
+    for (int i = 1; i <= N; i++) {
+            sum += pow(i,2);
+        }
+
+
+    printf("La suma de cuadrados  del 1 al %d es: %d\n", N, sum);
+
+    return 0;
+}
