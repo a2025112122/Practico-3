@@ -1,1 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+double x,S=0;
+int i,n;
+printf ("Intoducir un Numero(para el exponente final):");
+scanf ("%d",&n);
 
+printf ("Intoducir la base:");
+scanf ("%lf",&x);
+
+for(i=1;i<=n;i++)
+{
+S=S+pow(x,i);
+
+}
+
+printf("\nLa suma de los exponentes consecutivos en base %.2lf es: %.2lf\n", x, S);
+return 0;
+}
