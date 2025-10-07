@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int producto=1, N; 
+    printf("Introduce un numero N: ");
+    scanf("%d", &N);
+
+
+    for (int i = 1; i <= N; i++) {
+            producto*= i;
+        }
+
+
+    printf("el producto de los primeros num enteros hasta el %d es: %d\n", N, producto);
+
+    return 0;
+}
